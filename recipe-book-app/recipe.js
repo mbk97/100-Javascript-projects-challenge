@@ -14,22 +14,20 @@ const searchRecipe = async () => {
 
   loading.style.display = "block";
 
-  await fetch(url)
-    .then((res) => res.json())
-    .then((data) => {
-      result = data.meals;
-      console.log(result, "How");
-    })
-    .catch((err) => {
-      errText.innerHTML = err.message;
-    })
-    .finally(() => {
-      loading.style.display = "none";
-      inputField.value = "";
-    });
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    result = data.meals;
+  } catch (err) {
+    errText.innerHTML = err.message;
+  } finally {
+    loading.style.display = "none";
+    inputField.value = "";
+  }
 
-  const mappedResult = result.map((res) => {
-    return `<div class="card">
+  if (result) {
+    const mappedResult = result?.map((res) => {
+      return `<div class="card">
           <div class="card_header">
             <img src=${res.strMealThumb} alt="" class="img" />
           </div>
@@ -53,8 +51,11 @@ const searchRecipe = async () => {
         >
           </div>
         </div>`;
-  });
-  cardResultWrapper.innerHTML = mappedResult;
+    });
+    cardResultWrapper.innerHTML = mappedResult;
+  } else {
+    alert("No result found");
+  }
 };
 
 btn.addEventListener("click", () => {
