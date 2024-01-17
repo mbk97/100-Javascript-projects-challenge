@@ -1,0 +1,56 @@
+body {
+  background-color: rgb(119, 119, 223);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 500px;
+  max-width: 100%;
+  border-radius: 10px;
+  height: 400px;
+  max-height: 400px;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
+button {
+  width: auto;
+  height: 50px;
+  border-radius: 10px;
+  background-color: rgb(119, 119, 223);
+  outline: 0;
+  cursor: pointer;
+  border: 0;
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+}
+.quote-wrapper {
+  height: 250px;
+}
+.btn_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.err_text {
+  text-align: center;
+  color: red;
+  font-size: 22px;
+}
+
+.quote-text-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+#author-name {
+  font-size: 1.4rem;
+  text-align: center;
+}
