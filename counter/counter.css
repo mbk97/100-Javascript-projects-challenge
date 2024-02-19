@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.counter-container {
+  border: 1px solid rgb(66, 61, 61);
+  height: 100px;
+  width: 200px;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.count-text {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0;
+}
+
+button {
+  padding: 5px;
+  border-radius: 8px;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn-wrapper {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.decrease {
+  background-color: red;
+  color: #ffffff;
+}
+.reset {
+  background-color: rgb(133, 127, 127);
+  color: #000000;
+}
+.increase {
+  background-color: rgb(55, 255, 0);
+  color: #ffffff;
+}
