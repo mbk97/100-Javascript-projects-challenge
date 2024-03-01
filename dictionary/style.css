@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fa8073;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container {
+  width: 450px;
+  height: 350px;
+  border-radius: 9px;
+  background-color: #fda69d;
+}
+
+.container h3 {
+  text-align: center;
+}
+
+.input_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input_wrapper input {
+  height: 35px;
+  width: 250px;
+  padding: 10px;
+}
+
+.text-wrapper {
+  text-align: center;
+  padding: 30px;
+}
+
+#audio {
+  display: none;
+}
+
+.audio-wrapper {
+  display: grid;
+  place-items: center;
+}
+
+.error_text {
+  color: red;
+  display: none;
+}

@@ -4,7 +4,6 @@ const btn = document.getElementById("btn");
 const errorMessage = document.getElementById("errorMessage");
 
 async function fetchImages() {
-  const url = "";
   const inputValue = inputField.value;
 
   if (inputValue > 10 || inputValue < 1) {
@@ -16,6 +15,7 @@ async function fetchImages() {
 
   try {
     btn.innerText = "Loading...";
+    btn.style.cursor = "not-allowed";
     const response = await fetch(
       `https://api.unsplash.com/photos?per_page=${inputValue}&page=${Math.round(
         Math.random() * 1000,
