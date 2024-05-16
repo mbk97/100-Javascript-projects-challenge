@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  background-color: #ffc0cb;
+  height: 160px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.input_wrapper {
+  border: 1.5px solid black;
+  height: 40px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 9px;
+  width: 300px;
+}
+
+input {
+  border: 0;
+  outline: 0;
+  width: 250px;
+  background: transparent;
+}
+
+.fa-regular {
+  cursor: pointer;
+}
+
+.btn {
+  border: 0;
+  background-color: black;
+  color: white;
+  height: 40px;
+  border-radius: 8px;
+  margin-top: 10px;
+  width: 120px;
+  cursor: pointer;
+}

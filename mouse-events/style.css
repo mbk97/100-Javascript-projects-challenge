@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #01008c;
+  color: #ffffff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  gap: 100px;
+}
+
+.mouse-x-container p {
+  text-align: center;
+}
+
+.mouse-y-content {
+  width: 180px;
+  border: 1px solid white;
+  height: 70px;
+  text-align: center;
+  font-size: 4rem;
+}
+.mouse-y-container p {
+  text-align: center;
+}
+
+.mouse-x-content {
+  width: 180px;
+  border: 1px solid white;
+  height: 70px;
+  text-align: center;
+  font-size: 4rem;
+}
